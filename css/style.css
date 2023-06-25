@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "Roboto";
+  src: local('Roboto-Regular'),
+  url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local('Roboto-Bold'),
+  url("../fonts/Roboto-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local('Roboto-Medium'),
+  url("../fonts/Roboto-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+.wrapper {
+  width: 661px;
+  min-height: 763px;
+  height: auto;
+  background-color:  #C4C4C4;
+  margin: auto;
+  margin-top: 20px;
+  font-family: "Roboto", sanse-serif;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: auto;
+  padding-right: auto;
+  text-align: center;
+}
+
+.search__input {
+  width: 500px;
+  height: 61px;
+  font-size: 48px;
+  margin: auto;
+  margin-top: 20px;
+  padding-left: 13px;
+  box-sizing: border-box;
+  
+}
+
+.search__autocomplete {
+  width: 500px;
+  font-size: 30px;
+  list-style: none;
+  background-color: white;
+  padding: 0;
+  margin: auto;
+}
+.search__autocomplete-item {
+  height: 44 px;
+  text-align: left;
+  padding-left: 13px;
+  border: 2px solid black;
+  background-color: #E3E3E3;
+}
+
+.search__autocomplete-item--selected {
+  background-color: #65CDF9;
+}
+
+.result-block{
+  position: relative;
+  top: 50px;
+  width: 503px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 101px;
+  width: 503px;
+  display: flex;
+  background-color: #E27BEB;
+  border: 1px solid black;
+  font-size: 24px;
+  font-family: 'Roboto';
+  box-sizing: border-box;
+  padding: 8px 30px; 
+}
+
+.result__text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.result__name,
+.result__owner,
+.result__stars {
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  
+}
+
+.result__remove{
+  position: relative;
+  height: 42px;
+  width: 42px;
+  border: none;
+  color: red;
+  font-size: 50px;
+  background: transparent;
+}
+.result__remove:after, .result__remove::before{
+  position: absolute;
+  left: 21px;
+  top: -3px;
+  content: '';
+  height: 50px;
+  width: 4px;
+  background-color: rgba(255, 0, 0, 1);
+}
+.result__remove:after{
+  transform: rotate(45deg);
+}
+.result__remove::before{
+  transform: rotate(-45deg);
+};
